@@ -51,7 +51,15 @@ h1{margin:0;font-size:clamp(44px,6vw,74px);line-height:.91;letter-spacing:-.06em
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-radius:22px;background:rgba(11,24,43,.78);padding:18px;min-height:150px}.card h3{margin:0 0 8px;font-size:18px}.card p{font-size:14px;color:#aebfd3}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.panel{border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(13,30,55,.9),rgba(8,16,30,.9));padding:20px}.panel h3{margin:0 0 8px;font-size:22px}.panel p{font-size:15px}.panel ul{margin:12px 0 0;padding-left:18px;color:#c5d6ea}.panel li{margin:6px 0}
 .footer{padding:34px 0;color:#7f93aa;font-size:13px;text-align:center}
-@media(max-width:860px){.wrap{width:min(100% - 18px,1120px)}.top{top:6px;border-radius:17px}.nav{display:none}.hero{padding:38px 0 24px}.hero-grid,.split{grid-template-columns:1fr}h1{font-size:42px}.lead{font-size:17px}.grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr}}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.version-card{border:1px solid var(--line);border-radius:24px;background:linear-gradient(160deg,rgba(13,30,55,.92),rgba(8,16,30,.94));padding:20px;min-height:260px}
+.version-card.plus{border-color:rgba(100,205,247,.48);box-shadow:0 0 0 1px rgba(100,205,247,.08),0 22px 60px rgba(0,0,0,.22)}
+.version-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.version-card h3{margin:0;font-size:28px;letter-spacing:-.04em}.version-tag{border:1px solid #2f6585;color:#8de0ff;border-radius:999px;padding:6px 10px;font-size:11px;font-weight:900;letter-spacing:.12em;white-space:nowrap}
+.version-card p{color:#c9d8eb;font-size:15px;margin:0 0 12px}.version-card ul{margin:0;padding:0;list-style:none}.version-card li{display:flex;gap:9px;align-items:flex-start;padding:8px 0;color:#dce8f7;border-bottom:1px solid rgba(48,75,113,.42);font-size:14px}.version-card li:last-child{border-bottom:0}.version-card li:before{content:"";width:7px;height:7px;margin-top:7px;border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));flex:0 0 auto}.note-line{margin-top:14px;color:#91a5bd;font-size:13px}
+
+@media(max-width:860px){.wrap{width:min(100% - 18px,1120px)}.top{top:6px;border-radius:17px}.nav{display:none}.hero{padding:38px 0 24px}.hero-grid,.split{grid-template-columns:1fr}h1{font-size:42px}.lead{font-size:17px}.grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr}.compare{grid-template-columns:1fr}}
 @media(max-width:430px){.grid{grid-template-columns:repeat(2,1fr)}.screen{padding:12px;border-radius:22px}.ctas{display:block}.btn{width:100%;margin-bottom:8px}}
 </style>
 </head>
@@ -106,12 +114,34 @@ h1{margin:0;font-size:clamp(44px,6vw,74px);line-height:.91;letter-spacing:-.06em
         <article class="card"><h3>Less algorithmic noise</h3><p>Start from your tools and decisions, not from a feed.</p></article>
       </div>
     </section>
-    <section class="section wrap">
-      <h2>Versions</h2>
-      <div class="split">
-        <article class="panel"><h3>Free</h3><p>Local browser setup. Simple, fast, no subscription.</p><div class="ctas"><a class="btn" href="free/">View Free</a></div></article>
-        <article class="panel"><h3>Plus</h3><p>Cloud-synced configuration through the user’s own cloud storage.</p><div class="ctas"><a class="btn primary" href="plus/">View Plus</a></div></article>
+    <section class="section wrap" id="versions">
+      <h2>Free and Plus, visible from the start.</h2>
+      <p>No need to open another page to understand the difference. The app home shows both usage modes clearly.</p>
+      <div class="compare">
+        <article class="version-card">
+          <div class="version-top"><h3>Free</h3><span class="version-tag">LOCAL</span></div>
+          <p>For users who want a simple browser-based interface to organize their daily web.</p>
+          <ul>
+            <li>Use Punto Smart OS as your start interface.</li>
+            <li>Organize links, apps, searches and AI tools.</li>
+            <li>Works from the browser without heavy installation.</li>
+            <li>Configuration stays local to the browser/device.</li>
+            <li>Ideal to test and use the basic experience.</li>
+          </ul>
+        </article>
+        <article class="version-card plus">
+          <div class="version-top"><h3>Plus</h3><span class="version-tag">CLOUD SYNC</span></div>
+          <p>For users who want their interface to follow them across devices.</p>
+          <ul>
+            <li>Sync your Punto Smart OS configuration.</li>
+            <li>Use your own cloud storage for persistence.</li>
+            <li>Keep the same shortcuts and categories.</li>
+            <li>Useful across phone, computer, tablet or TV Box.</li>
+            <li>Designed for continuity without owning your data.</li>
+          </ul>
+        </article>
       </div>
+      <div class="note-line">Free and Plus are usage modes. Punto Smart OS is the app home.</div>
     </section>
   </main>
   <footer class="footer wrap">Punto Smart OS · App home · Free · Plus</footer>

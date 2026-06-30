@@ -3,60 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Punto Smart OS | Portable cloud interface for your daily web</title>
-  <meta name="description" content="Punto Smart OS is a portable cloud interface to organize links, tools, searches, AI and workflows from any browser.">
+  <title>Punto Smart OS | App home</title>
+  <meta name="description" content="Punto Smart OS app home. A portable cloud interface for your daily web.">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="canonical" href="https://gonzalorios83-cell.github.io/home/">
-  <meta property="og:title" content="Punto Smart OS">
-  <meta property="og:description" content="A portable cloud interface for your daily web.">
-  <meta property="og:type" content="website">
   <style>
-:root{--bg:#060d18;--bg2:#0b1729;--panel:#0e1d33;--panel2:#132642;--line:#244161;--text:#eef6ff;--muted:#9fb1c8;--soft:#d7e6fa;--accent:#64cdf7;--accent2:#7b7cff;--green:#46f0ac}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 8% -8%,rgba(100,205,247,.22),transparent 28%),radial-gradient(circle at 92% 0%,rgba(123,124,255,.2),transparent 30%),linear-gradient(180deg,#06111f 0%,#050912 100%);color:var(--text);line-height:1.45}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}.top{position:sticky;top:10px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:14px;margin:10px auto 0;padding:12px 14px;border:1px solid rgba(100,205,247,.24);background:rgba(7,17,32,.82);backdrop-filter:blur(14px);border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.26)}.brand{display:flex;align-items:center;gap:10px;min-width:0}.logo{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;box-shadow:0 0 26px rgba(100,205,247,.34)}.logo:after{content:"";width:21px;height:21px;border-radius:7px;border:2px solid rgba(255,255,255,.72)}.brand-text{font-weight:900;letter-spacing:.15em;font-size:13px;line-height:1.05}.brand-text span{display:block;color:#cdd9ea;font-weight:550;letter-spacing:.28em}.nav{display:flex;align-items:center;gap:9px;font-size:13px;color:#c6d5e9}.nav a{padding:8px 10px;border-radius:999px;border:1px solid transparent}.nav a:hover{border-color:#2b5274;background:rgba(100,205,247,.08)}.hero{padding:70px 0 38px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center}.kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #2f6585;border-radius:999px;color:#8de0ff;font-size:12px;letter-spacing:.19em;font-weight:700;margin-bottom:14px}h1{margin:0;font-size:clamp(44px,6vw,74px);line-height:.91;letter-spacing:-.06em;font-weight:950}.lead{margin:18px 0 0;color:#dce8f7;font-size:clamp(18px,2.2vw,22px);font-weight:650;max-width:680px}.copy{margin:12px 0 0;color:var(--muted);font-size:16px;max-width:690px}.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;font-weight:850;font-size:14px;border:1px solid #335777;background:rgba(15,33,57,.85)}.btn.primary{background:linear-gradient(135deg,#64cdf7,#7b7cff);color:#06111f;border:0}.btn:hover{transform:translateY(-1px)}.screen{border:1px solid rgba(100,205,247,.25);border-radius:28px;padding:16px;background:linear-gradient(160deg,rgba(15,32,57,.92),rgba(7,13,28,.96));box-shadow:0 25px 80px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.05)}.screen-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.search{flex:1;border:1px solid #2b4f72;background:rgba(3,10,20,.65);border-radius:16px;padding:12px 14px;color:#d9edff;font-weight:700}.pill{font-size:11px;color:#06111f;background:var(--green);padding:8px 10px;border-radius:999px;font-weight:900;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.app{min-height:74px;border:1px solid #274563;background:rgba(12,24,42,.74);border-radius:17px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}.icon{width:26px;height:26px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));opacity:.9}.app b{font-size:12px;color:#eef6ff}.app span{font-size:11px;color:#91a5bd}.band{margin-top:12px;border:1px solid #284b68;border-radius:18px;background:rgba(8,22,36,.72);padding:12px;color:#c7d7ea;font-size:13px}.section{padding:32px 0}.section h2{font-size:clamp(28px,3.5vw,42px);letter-spacing:-.04em;line-height:1;margin:0 0 10px}.section p{color:var(--muted);font-size:16px;max-width:820px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-radius:22px;background:rgba(11,24,43,.78);padding:18px;min-height:160px}.card h3{margin:0 0 8px;font-size:18px}.card p{font-size:14px;color:#aebfd3}.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.panel{border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(13,30,55,.9),rgba(8,16,30,.9));padding:20px}.panel h3{margin:0 0 8px;font-size:22px}.panel p{font-size:15px}.footer{padding:34px 0;color:#7f93aa;font-size:13px;text-align:center}@media(max-width:860px){.wrap{width:min(100% - 18px,1120px)}.top{top:6px;border-radius:17px}.nav{display:none}.hero{padding:38px 0 24px}.hero-grid,.split{grid-template-columns:1fr}h1{font-size:42px}.lead{font-size:17px}.grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr}}@media(max-width:430px){.grid{grid-template-columns:repeat(2,1fr)}.screen{padding:12px;border-radius:22px}.ctas{display:block}.btn{width:100%;margin-bottom:8px}}
+:root{
+  --bg:#050b14;--bg2:#071426;--panel:#0d1c33;--panel2:#122844;--line:#24415f;
+  --text:#eef6ff;--muted:#9fb1c8;--soft:#d7e6fa;--accent:#64cdf7;--accent2:#7b7cff;--green:#46f0ac;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:
+radial-gradient(circle at 6% -6%,rgba(100,205,247,.22),transparent 28%),
+radial-gradient(circle at 94% 0%,rgba(123,124,255,.20),transparent 30%),
+linear-gradient(180deg,#06111f 0%,#050912 100%);color:var(--text);line-height:1.45}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,calc(100% - 32px));margin:0 auto}
+.top{position:sticky;top:10px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:14px;margin:10px auto 0;padding:12px 14px;border:1px solid rgba(100,205,247,.24);background:rgba(7,17,32,.82);backdrop-filter:blur(14px);border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.26)}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.logo{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;box-shadow:0 0 26px rgba(100,205,247,.34)}
+.logo:after{content:"";width:21px;height:21px;border-radius:7px;border:2px solid rgba(255,255,255,.72)}
+.brand-text{font-weight:900;letter-spacing:.15em;font-size:13px;line-height:1.05}
+.brand-text span{display:block;color:#cdd9ea;font-weight:550;letter-spacing:.28em}
+.nav{display:flex;align-items:center;gap:9px;font-size:13px;color:#c6d5e9}
+.nav a{padding:8px 10px;border-radius:999px;border:1px solid transparent}
+.nav a:hover{border-color:#2b5274;background:rgba(100,205,247,.08)}
+.hero{padding:70px 0 38px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid #2f6585;border-radius:999px;color:#8de0ff;font-size:12px;letter-spacing:.19em;font-weight:700;margin-bottom:14px;text-transform:uppercase}
+h1{margin:0;font-size:clamp(44px,6vw,74px);line-height:.91;letter-spacing:-.06em;font-weight:950}
+.lead{margin:18px 0 0;color:#dce8f7;font-size:clamp(18px,2.2vw,22px);font-weight:650;max-width:680px}
+.copy{margin:12px 0 0;color:var(--muted);font-size:16px;max-width:690px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;font-weight:850;font-size:14px;border:1px solid #335777;background:rgba(15,33,57,.85)}
+.btn.primary{background:linear-gradient(135deg,#64cdf7,#7b7cff);color:#06111f;border:0}
+.screen{border:1px solid rgba(100,205,247,.25);border-radius:28px;padding:16px;background:linear-gradient(160deg,rgba(15,32,57,.92),rgba(7,13,28,.96));box-shadow:0 25px 80px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.05)}
+.screen-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.search{flex:1;border:1px solid #2b4f72;background:rgba(3,10,20,.65);border-radius:16px;padding:12px 14px;color:#d9edff;font-weight:700}
+.pill{font-size:11px;color:#06111f;background:var(--green);padding:8px 10px;border-radius:999px;font-weight:900;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.app{min-height:74px;border:1px solid #274563;background:rgba(12,24,42,.74);border-radius:17px;padding:10px;display:flex;flex-direction:column;justify-content:space-between}
+.icon{width:26px;height:26px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));opacity:.9}
+.app b{font-size:12px;color:#eef6ff}.app span{font-size:11px;color:#91a5bd}
+.band{margin-top:12px;border:1px solid #284b68;border-radius:18px;background:rgba(8,22,36,.72);padding:12px;color:#c7d7ea;font-size:13px}
+.section{padding:32px 0}.section h2{font-size:clamp(28px,3.5vw,42px);letter-spacing:-.04em;line-height:1;margin:0 0 10px}.section p{color:var(--muted);font-size:16px;max-width:820px;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.card{border:1px solid var(--line);border-radius:22px;background:rgba(11,24,43,.78);padding:18px;min-height:150px}.card h3{margin:0 0 8px;font-size:18px}.card p{font-size:14px;color:#aebfd3}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.panel{border:1px solid var(--line);border-radius:22px;background:linear-gradient(160deg,rgba(13,30,55,.9),rgba(8,16,30,.9));padding:20px}.panel h3{margin:0 0 8px;font-size:22px}.panel p{font-size:15px}.panel ul{margin:12px 0 0;padding-left:18px;color:#c5d6ea}.panel li{margin:6px 0}
+.footer{padding:34px 0;color:#7f93aa;font-size:13px;text-align:center}
+@media(max-width:860px){.wrap{width:min(100% - 18px,1120px)}.top{top:6px;border-radius:17px}.nav{display:none}.hero{padding:38px 0 24px}.hero-grid,.split{grid-template-columns:1fr}h1{font-size:42px}.lead{font-size:17px}.grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr}}
+@media(max-width:430px){.grid{grid-template-columns:repeat(2,1fr)}.screen{padding:12px;border-radius:22px}.ctas{display:block}.btn{width:100%;margin-bottom:8px}}
 </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Punto Smart OS","applicationCategory":"ProductivityApplication","operatingSystem":"Web browser","description":"A portable cloud interface to organize links, tools, searches, AI and workflows from any browser.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 </head>
 <body>
   <header class="top wrap">
-    <a class="brand" href="./" aria-label="Punto Smart OS"><div class="logo"></div><div class="brand-text"><span>PUNTO</span>SMART OS</div></a>
-    <nav class="nav"><a href="#what">What it is</a><a href="#why">Why it matters</a><a href="#plans">Free / Plus</a></nav>
+    <a class="brand" href="" aria-label="Punto Smart OS">
+      <div class="logo"></div>
+      <div class="brand-text"><span>PUNTO</span>SMART OS</div>
+    </a>
+    <nav class="nav">
+      <a href="">App home</a>
+      <a href="free/">Free</a>
+      <a href="plus/">Plus</a>
+    </nav>
   </header>
+
   <main>
     <section class="hero wrap">
       <div class="hero-grid">
         <div>
-          <div class="kicker">CLOUD OPERATING INTERFACE</div>
+          <div class="kicker">App home</div>
           <h1>A new way to use the web.</h1>
           <p class="lead">Your links, tools, searches, AI and workflows — organized in one place, available from any browser.</p>
-          <p class="copy">Punto Smart OS does not replace your device. It replaces the messy way you enter, search and move through your digital life.</p>
-          <div class="ctas"><a class="btn primary" href="#what">Explore the concept</a><a class="btn" href="#plans">Free and Plus</a></div>
+          <p class="copy">Punto Smart OS is the app home: the main operating interface. Free and Plus are usage modes, not separate products.</p>
+          <div class="ctas">
+            <a class="btn primary" href="free/">Free version</a>
+            <a class="btn" href="plus/">Plus version</a>
+          </div>
         </div>
-        <div class="screen" aria-label="Punto Smart OS interface preview">
-          <div class="screen-top"><div class="search">Search web, AI, tools, places...</div><div class="pill">LIVE WEB</div></div>
+        <div class="screen">
+          <div class="screen-top"><div class="search">Search web, AI, tools, places...</div><div class="pill">APP HOME</div></div>
           <div class="grid">
-            <div class="app"><div class="icon"></div><b>AI</b><span>Assistants</span></div><div class="app"><div class="icon"></div><b>Work</b><span>Tools</span></div><div class="app"><div class="icon"></div><b>Search</b><span>Intent</span></div><div class="app"><div class="icon"></div><b>Links</b><span>Daily</span></div>
-            <div class="app"><div class="icon"></div><b>Media</b><span>Video</span></div><div class="app"><div class="icon"></div><b>Docs</b><span>Cloud</span></div><div class="app"><div class="icon"></div><b>Business</b><span>Access</span></div><div class="app"><div class="icon"></div><b>Custom</b><span>Your way</span></div>
+            <div class="app"><div class="icon"></div><b>AI</b><span>Assistants</span></div>
+            <div class="app"><div class="icon"></div><b>Work</b><span>Tools</span></div>
+            <div class="app"><div class="icon"></div><b>Search</b><span>Intent</span></div>
+            <div class="app"><div class="icon"></div><b>Links</b><span>Daily</span></div>
+            <div class="app"><div class="icon"></div><b>Media</b><span>Video</span></div>
+            <div class="app"><div class="icon"></div><b>Docs</b><span>Cloud</span></div>
+            <div class="app"><div class="icon"></div><b>Business</b><span>Access</span></div>
+            <div class="app"><div class="icon"></div><b>Custom</b><span>Your way</span></div>
           </div>
           <div class="band">A visual web desktop designed to reduce algorithm dependence, app clutter and device friction.</div>
         </div>
       </div>
     </section>
-    <section class="section wrap" id="what">
-      <h2>What is Punto Smart OS?</h2>
-      <p>A web-based operating interface. A personal start layer for your digital life. It lets you organize access to apps, websites, search modes, AI tools and daily workflows without depending on one device, one app store or one algorithmic feed.</p>
-      <div class="cards"><article class="card"><h3>Browser first</h3><p>Open it from a phone, computer, tablet or TV Box. No heavy installation required.</p></article><article class="card"><h3>Intent-based search</h3><p>Search by purpose: web, AI, shopping, places, providers, support, work or social platforms.</p></article><article class="card"><h3>Personal interface</h3><p>Add, remove and organize shortcuts so your web starts from your own logic, not from a feed.</p></article></div>
+    <section class="section wrap">
+      <h2>Cloud Operating Interface</h2>
+      <p>A browser-based layer to organize apps, links, searches, AI tools and workflows from your own logic.</p>
+      <div class="cards">
+        <article class="card"><h3>Portable</h3><p>Use it from phone, computer, tablet or TV Box.</p></article>
+        <article class="card"><h3>Personal</h3><p>Add, remove and organize access points around your real use.</p></article>
+        <article class="card"><h3>Less algorithmic noise</h3><p>Start from your tools and decisions, not from a feed.</p></article>
+      </div>
     </section>
-    <section class="section wrap" id="why">
-      <h2>Less device dependence. Less algorithm dependence.</h2>
-      <p>The web is powerful, but fragmented. Punto Smart OS gives users a stable interface across devices: useful for low-end hardware, shared screens, old equipment, business panels and personal productivity.</p>
-      <div class="cards"><article class="card"><h3>Portable</h3><p>Your environment can travel with you. The browser becomes the entry point.</p></article><article class="card"><h3>Lightweight</h3><p>Built as a fast web interface. It helps keep older or limited devices useful for longer.</p></article><article class="card"><h3>Human-centered</h3><p>Instead of endless recommendations, it prioritizes your own tools, categories and decisions.</p></article></div>
-    </section>
-    <section class="section wrap" id="plans">
-      <h2>Free and Plus</h2>
-      <p>Start simple. Upgrade only when synchronization and persistence matter.</p>
-      <div class="split"><article class="panel"><h3>Free</h3><p>Use the interface locally from the browser. Ideal to test the concept, organize shortcuts and use Punto Smart OS as a daily start page.</p></article><article class="panel"><h3>Plus</h3><p>Sync your configuration through your own cloud storage. Your interface follows you across devices without turning Punto Smart OS into the owner of your data.</p></article></div>
+    <section class="section wrap">
+      <h2>Versions</h2>
+      <div class="split">
+        <article class="panel"><h3>Free</h3><p>Local browser setup. Simple, fast, no subscription.</p><div class="ctas"><a class="btn" href="free/">View Free</a></div></article>
+        <article class="panel"><h3>Plus</h3><p>Cloud-synced configuration through the user’s own cloud storage.</p><div class="ctas"><a class="btn primary" href="plus/">View Plus</a></div></article>
+      </div>
     </section>
   </main>
-  <footer class="footer wrap">Punto Smart OS · Cloud Operating Interface · Built for the browser.</footer>
+  <footer class="footer wrap">Punto Smart OS · App home · Free · Plus</footer>
+
 </body>
 </html>
